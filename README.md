@@ -16,6 +16,24 @@
 - Repayment Capability
 - Employment by Degree
 
+### Machine Learning Methodologies
+
+1. KMeans
+2. Tensorflow
+3. Keras Tuner
+4. Random Forest Regressor
+
+### Prerequisites
+
+1. Python
+2. Pyspark
+3. Findspark
+4. Pyspark.sql
+5. Pandas
+6. Numpy
+7. Matplotlib
+8. Sklearn
+
 ## Models
 
 #### The dataset we used was the College Scorecard from the U.S. Department of Education. https://collegescorecard.ed.gov/data. The datasets were stored in CSV files. Of the files available we downloaded 2:
@@ -25,27 +43,29 @@
 
 ## Income Prediction Model
 
-#### Both of the datasets from the College Scorecard were downloaded and cleaned to use for the income prediction model. The cleaned data is stored at https://drive.google.com/file/d/1QX_NN-VWswQilt_v_WTTbMJHJZgzgUM3/view?usp=sharing and https://drive.google.com/file/d/1t0crmMdDN0AJxopDj7E6UhOs2MMm-okB/view?usp=sharing
+#### The Field of Study dataset from the College Scorecard were downloaded and cleaned to use for the income prediction model. The cleaned data is stored at https://drive.google.com/file/d/1t0crmMdDN0AJxopDj7E6UhOs2MMm-okB/view?usp=sharing
 
 #### The following steps describe the process:
 
 1. Download the raw datasets to the local computer into the project folder.
 2. Use Jupyter Notebook to review and clean the data.
 3. Upload cleaned dataset to a google drive.
-4. Using Google Colaboratory create a new notebook and link to the dataset.
-5. Extract dataset from the Google drive and load it into pyspark.sql database.
-6. Create temporary tables and joined the 2 tables to create a new database to use for data modeling.
-7. Transformed the categorical data with StringIndexer and OneHotEncoder.
-8. Assembled the feature data columns into a vector column.
-9. Trained, tested and split the data.
-10. Run the linear Regression Model using PySpark’s MLLib returning the mean squared error and the r2 coefficient.
-11. Plot the actual vs predicted values.
-12. Run Random Forest Regressor model and evaluated the model with the regression evaluator.
+4. Create a new notebook using Google Colaboratory and link to the dataset.
+5. Install necessary packages and initialize a Spark session.
+6. Extract dataset from the Google drive and load it into pyspark.sql database.
+7. Run exploratory analysis of the dataset.
+8. Plot distribution and scatterplot for insights.
+9. Transform categorical data with StringIndexer and OneHotEncoder.
+10. Assembled the feature data columns into a vector column.
+11. Train, test and split the data.
+12. Run the linear Regression Model using PySpark’s MLLib returning the mean squared error and the r2 coefficient.
 13. Plot the actual vs predicted values.
-14. Optimized the Random Forest Regressor model.
-15. Cross validated to determine the best model.
-16. Used the optimized model to make predictions on the test data.
-17. Plot the actual vs predicted values of the optimized model.
+14. Run Random Forest Regressor model and evaluate the model with the regression evaluator.
+15. Plot the actual vs predicted values.
+16. Optimized the Random Forest Regressor model.
+17. Cross validate to determine the best model.
+18. Use the optimized model to make predictions on the test data.
+19. Plot the actual vs predicted values of the optimized model.
 
 ## Repayment Model
 
