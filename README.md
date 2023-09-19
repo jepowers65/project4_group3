@@ -79,3 +79,8 @@
 6. Run the "3_optimization_colab_Ian.ipynb" notebook in the Google Colab environment for model optimization.
 
 ## Employment by Degree Model
+1. Download the files or clone the git hub.
+2. Run the code using Jupyter Notebook for the results to be reproduced.
+3. The CSV file named "cleaned_data.csv" are the results.
+4. Run the model and the visualiztions to see more results.
+
